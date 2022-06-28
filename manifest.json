@@ -1,0 +1,19 @@
+{
+    "name": "Marked Text Translate Extension",
+    "description": "This extension translates the marked text to hebrew",
+    "version": "1.0",
+    "permissions": ["contextMenus", "activeTab"],
+    "content_scripts": [
+        {
+          "matches": ["https://*/*", "http://*/*"],
+          "js": ["index.js"]
+        }
+      ],
+    "background":{
+        "scripts": ["background.js"]
+    },
+    "web_accessible_resources": ["logo.jpeg"],
+
+    
+    "manifest_version": 2
+}
